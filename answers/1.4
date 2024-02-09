@@ -1,1 +1,2 @@
+docker build -f back/Dockerfile.app -t docker_lab_image .
 docker run --publish 5001:5000 -e CURRENT_ENVIRONMENT=development docker_lab_image
