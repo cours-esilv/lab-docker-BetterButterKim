@@ -1,0 +1,9 @@
+# Remove the original image(non-tagged one)
+docker rmi docker_lab_image
+
+# Stop the running container
+docker stop 226e1979a474
+docker rm 226e1979a474
+
+# Remove the tagged image
+docker rmi betterbutterkim/ml_ops
