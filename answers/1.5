@@ -1,1 +1,1 @@
-docker run -p 5001:5000 -e environment=development docker_lab_image
+docker run -p 5001:5000 -e CURRENT_ENVIRONMENT=production --name docker_lab_container docker_lab_image
