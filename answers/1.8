@@ -1,0 +1,10 @@
+# Pull the pushed docker image
+docker pull betterbutterkim/ml_ops:latest
+
+# Re-launch the container.
+# in DETACHED MODE(-d)
+docker run -d -p 5001:5000 -e "CURRENT_ENVIRONMENT=production" --name docker_lab_container betterbutterkim/ml_ops
+
+## Result
+## macbookpro@Minsoo-MacBook-Pro app % docker run -d -p 5001:5000 -e "CURRENT_ENVIRONMENT=production" --name docker_lab_container betterbutterkim/ml_ops
+## b93d8cfa3288d8de12f711b5eba5e4cdc16ee5c341844796ad82a84f16534cfc
